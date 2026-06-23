@@ -7,6 +7,7 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         NotificationUtils.createNotificationChannel(this)
         requestNotificationPermission()
         getFCMToken()
+        subscribeToTopic()
 
         sendNotifButton.setOnClickListener {
             sendLocalNotification()
@@ -44,6 +46,17 @@ class MainActivity : AppCompatActivity() {
         tokenText.setOnClickListener {
             copyTokenToClipboard()
         }
+    }
+
+    private fun subscribeToTopic() {
+        FirebaseMessaging.getInstance().subscribeToTopic("semua_user")
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Log.d("FCM_TOPIC", "Berhasil subscribe ke topic: semua_user")
+                } else {
+                    Log.e("FCM_TOPIC", "Gagal subscribe ke topic: semua_user", task.exception)
+                }
+            }
     }
 
     private fun getFCMToken() {

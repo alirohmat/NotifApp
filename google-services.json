@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1061846911224",
+    "project_id": "notifapp-2103",
+    "storage_bucket": "notifapp-2103.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061846911224:android:78ce37d2ebf636bfd4130d",
+        "android_client_info": {
+          "package_name": "com.NotifApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAih3L3OM4PyzaAjtQpPCNOl5l4ApQRzpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

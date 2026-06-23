@@ -12,6 +12,10 @@
         android:padding="16dp"
         android:textAlignment="center"
         android:text="FCM Token akan muncul di sini"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="Tap token untuk copy ke clipboard"
+        android:contentDescription="Token FCM, tap untuk copy"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

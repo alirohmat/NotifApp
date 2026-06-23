@@ -3,9 +3,7 @@
 Single-module Android app (Kotlin, no tests). Firebase Cloud Messaging + local notifications.
 
 ## Build
-```bash
-./gradlew assembleDebug
-```
+Build dijalankan via GitHub Actions — jangan jalankan `./gradlew` secara lokal.
 Artifact: `app/build/outputs/apk/debug/app-debug.apk`
 
 ## Critical repo-specific constraints

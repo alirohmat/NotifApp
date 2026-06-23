@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
             .setSmallIcon(android.R.drawable.ic_dialog_info)
             .setContentTitle("NotifApp")
             .setContentText("Halo! Ini notifikasi dari NotifApp!")
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setAutoCancel(true)
 
         NotificationManagerCompat.from(this).notify(NOTIF_ID, builder.build())

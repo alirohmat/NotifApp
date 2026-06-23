@@ -23,6 +23,8 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          cache-disabled: true  # Nonaktifkan cache sepenuhnya
 
       - name: Generate Gradle Wrapper
         run: gradle wrapper --gradle-version=8.5
